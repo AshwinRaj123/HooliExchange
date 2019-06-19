@@ -1,0 +1,39 @@
+<div class="container">
+ <div class="row main_search">
+    <div class="col-md-3">
+      <input type="hidden" id="hidden_field" value="">
+        <select class="form-control classic" id="sel1" [(ngModel)]="selectedCurr" (change)="hiddeDiv()">
+          <option *ngFor="let countrycode of country_code"  value={{countrycode.currCode}} >{{countrycode.currCode}}</option>
+        </select>
+       
+    </div>
+    <div class="col-md-5"></div> 
+    <div class="col-md-3">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search by Currency" name="search"  
+            [(ngModel)]="searchText" id="search">
+            <div class="input-group-btn">
+              <a class="btn btn-info search-button" ><i class="material-icons">
+                  search
+                  </i></a>
+            
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="rate_display">
+            <div *ngFor = "let countrycode of country_code | filter:searchText" class="list" id={{countrycode.currCode}} (load) = "onload()">
+                 <div class="col-md-7 col-sm-6 col-xs-3">
+                      <h4 class="cur_cod">{{countrycode.currCode }}</h4>
+                  </div>
+                  <div class="col-md-2 col-sm-3 col-xs-5 text-center">
+                      <h4>{{ratesTime$.rates[prevDate][countrycode.currCode] - rates$.rates[countrycode.currCode] | number:'0.1-5'}}</h4>
+                  </div>
+                  <div class="col-md-2 col-sm-3 col-xs-4 text-center">
+                    <h4>{{rates$.rates[countrycode.currCode] | number:'0.1-5'}}</h4>
+            </div>
+            </div>
+    </div>
+ </div>
+  
+</div>

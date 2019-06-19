@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar{
+    
+    background: #3ba3fb !important;
+}
+.navbar-toggler-icon{
+    color:white !important
+}
+
+.navbar-brand{
+    color:white !important;
+}
+.navbar-nav a{
+    color:white!important;
+}
+
+.navbar-default .navbar-nav>.active>a{
+    background: none !important;
+}
+
+.navbar-header button{
+    float:left !important;
+    margin-left:10px !important;
+}
+.navbar-header a{
+    margin-left:15%;
+}
+.navbar-toggle{
+    border:none !important;
+}
+.navbar-default .navbar-toggle:hover{
+    background:none !important;
+    }
+
+    select {
+
+        /* styling */
+        color:#3ba3fb !important;
+        font-weight: bold !important;
+        border-radius: 4px;
+        display: inline-block;
+       line-height: 1.5em !important;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin: 0 !important;      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      
+      
+      /* arrows */
+      
+      select.classic {
+        background-image:
+          linear-gradient(45deg, transparent 50%, white 50%),
+          linear-gradient(135deg, white 50%, transparent 50%),
+          linear-gradient(to right, #3ba3fb, #3ba3fb) !important;
+        background-position:
+        calc(100% - 17px) calc(1em + 1px),
+        calc(100% - 12px) calc(1em + 1px),
+        100% 0px !important;
+        background-size:
+          5px 5px,
+          5px 5px,
+          2.5em 2.5em !important;
+        background-repeat: no-repeat !important;
+      }
+      
+    .text_rate{
+        line-height: 1.5em !important;
+    }
+    .main_search div{
+        margin-top:5px;
+    }
+    .search-button{
+        height: 34px;
+        width: 39px;
+        background: #3ba3fb !important;
+    }
+    .search-button i{
+        font-size: 19px;
+        margin-left: -2px;
+    }
+    .rate_display{
+        list-style: none;
+    }
+    .rate_display .list{
+       color: #3ba3fb; 
+    }
+    .rate_display .list div{
+        margin-top: 2em;
+    }
+    .rate_display .list div h4{
+        font-weight:bold !important;
+        font-size: 15px !important;
+    }
+    .rate_display .list div:nth-child(1){
+        border: 1px solid;
+        border-right: 0;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .rate_display .list div:nth-child(2){
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .rate_display .list div:nth-child(3){
+        border: 1px solid;
+        border-left: 0;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+       
+    }
