@@ -15,6 +15,7 @@ export class ExchangeComponent implements AfterViewInit,OnInit{
     myDate;
     currenDate;
     prevDate;
+    searchText;
    constructor(private data: RatesService){}
 
     ngOnInit(){
